@@ -2,14 +2,14 @@ class Coinchanger
 
 	def dispense(change)
 		coins = [25, 10, 5, 1]
-		coin_array = []
+		change_given = []
 
 		coins.each do |coin|
 			while change >= coin
 				change -= coin
-				coin_array << coin
+				change_given << coin
 			end
 		end
-		coin_array
+		change_given
 	end
 end
